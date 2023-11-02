@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "email": "ali@gmail.com",
+      "password": "$2a$10$J6vgNz.dGznJV4q/n3ii8.eXEhjYz7UjOcu.i07ocLNbRb/AgEmGa",
+      "id": 1
+    }
+  ],
+  "todos": [
+    {
+      "taskName": "Test2",
+      "isCompleted": false,
+      "id": 2
+    },
+    {
+      "taskName": "Test3",
+      "isCompleted": false,
+      "id": 3
+    },
+    {
+      "taskName": "Test4",
+      "isCompleted": false,
+      "id": 4
+    },
+    {
+      "taskName": "Test5",
+      "isCompleted": false,
+      "id": 5
+    },
+    {
+      "taskName": "Test6",
+      "isCompleted": false,
+      "id": 6
+    },
+    {
+      "taskName": "Be1",
+      "isCompleted": false,
+      "id": 7
+    },
+    {
+      "taskName": "Be2",
+      "isCompleted": false,
+      "id": 8
+    },
+    {
+      "taskName": "Be3",
+      "isCompleted": true,
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "taskName": "testFromPostman",
+      "isCompleted": true,
+      "id": 11
+    }
+  ]
+}
