@@ -53,6 +53,7 @@ const Todolist = () => {
       completed: false,
     };
     axiosInstance.post(`/todos`, taskData).then(() => getData());
+    setTilte("")
   };
 
   useEffect(() => {
@@ -80,6 +81,7 @@ const Todolist = () => {
           type="text"
           onChange={handleChange}
           placeholder="Add a task........"
+          value={title}
         />
         <button className="addtask-btn">Add Task</button>
       </form>
