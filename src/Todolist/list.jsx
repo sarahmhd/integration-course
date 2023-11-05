@@ -8,6 +8,7 @@ const Todolist = () => {
   const [query, setQuery] = useState("");
 
   const getData = (query) => {
+    console.log(query);
     axiosInstance
       .get(`/todos`, {
         params: {
@@ -56,18 +57,13 @@ const Todolist = () => {
 
   useEffect(() => {
     const getSearchedData = setTimeout(() => {
-      searchTask();
-    }, 2000);
-    return clearTimeout(getSearchedData);
-  });
+      getData(query);
+    }, 500);
+    return () => clearTimeout(getSearchedData);
+  }, [query]);
+
   const searchTask = (e) => {
     setQuery(e.target.value);
-    if (e.target.value == "") {
-      setTodos(todos);
-      getData();
-    } else {
-      getData(encodeURIComponent(query));
-    }
   };
 
   return (
